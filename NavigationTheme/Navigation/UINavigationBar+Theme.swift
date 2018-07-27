@@ -6,4 +6,17 @@
 //  Copyright © 2018年 Bomi. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension UINavigationBar {
+    
+    func applyTheme(theme: NavigaitonTheme) {
+        
+        self.barTintColor = theme.barTintColor
+        
+        self.tintColor = theme.tintColor
+        
+        self.titleTextAttributes = theme.titleTextAttributes
+    }
+    
+}

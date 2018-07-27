@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		F45143C1210AE90000FDEE9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45143C0210AE90000FDEE9A /* AppDelegate.swift */; };
-		F45143C3210AE90000FDEE9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45143C2210AE90000FDEE9A /* ViewController.swift */; };
+		F45143C3210AE90000FDEE9A /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45143C2210AE90000FDEE9A /* LandingViewController.swift */; };
 		F45143C6210AE90000FDEE9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45143C4210AE90000FDEE9A /* Main.storyboard */; };
 		F45143C8210AE90100FDEE9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45143C7210AE90100FDEE9A /* Assets.xcassets */; };
 		F45143CB210AE90100FDEE9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45143C9210AE90100FDEE9A /* LaunchScreen.storyboard */; };
 		F45143D5210AEC1900FDEE9A /* NavigationTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45143D4210AEC1900FDEE9A /* NavigationTheme.swift */; };
 		F45143DD210B067600FDEE9A /* NavigationThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45143DC210B067600FDEE9A /* NavigationThemeTests.swift */; };
 		F45143E4210B08C300FDEE9A /* NavigationTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45143D4210AEC1900FDEE9A /* NavigationTheme.swift */; };
+		F45143E7210B0C6400FDEE9A /* UINavigationBar+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45143E6210B0C6400FDEE9A /* UINavigationBar+Theme.swift */; };
+		F45143E9210B13A000FDEE9A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45143E8210B13A000FDEE9A /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +32,7 @@
 /* Begin PBXFileReference section */
 		F45143BD210AE90000FDEE9A /* NavigationTheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationTheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45143C0210AE90000FDEE9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F45143C2210AE90000FDEE9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F45143C2210AE90000FDEE9A /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		F45143C5210AE90000FDEE9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F45143C7210AE90100FDEE9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F45143CA210AE90100FDEE9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,6 +41,8 @@
 		F45143DA210B067600FDEE9A /* NavigationThemeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationThemeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45143DC210B067600FDEE9A /* NavigationThemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationThemeTests.swift; sourceTree = "<group>"; };
 		F45143DE210B067600FDEE9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F45143E6210B0C6400FDEE9A /* UINavigationBar+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Theme.swift"; sourceTree = "<group>"; };
+		F45143E8210B13A000FDEE9A /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +84,9 @@
 		F45143BF210AE90000FDEE9A /* NavigationTheme */ = {
 			isa = PBXGroup;
 			children = (
-				F45143D4210AEC1900FDEE9A /* NavigationTheme.swift */,
+				F45143E5210B0C1400FDEE9A /* Navigation */,
 				F45143C0210AE90000FDEE9A /* AppDelegate.swift */,
-				F45143C2210AE90000FDEE9A /* ViewController.swift */,
+				F45143C2210AE90000FDEE9A /* LandingViewController.swift */,
 				F45143C4210AE90000FDEE9A /* Main.storyboard */,
 				F45143C7210AE90100FDEE9A /* Assets.xcassets */,
 				F45143C9210AE90100FDEE9A /* LaunchScreen.storyboard */,
@@ -98,6 +102,16 @@
 				F45143DE210B067600FDEE9A /* Info.plist */,
 			);
 			path = NavigationThemeTests;
+			sourceTree = "<group>";
+		};
+		F45143E5210B0C1400FDEE9A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F45143D4210AEC1900FDEE9A /* NavigationTheme.swift */,
+				F45143E6210B0C6400FDEE9A /* UINavigationBar+Theme.swift */,
+				F45143E8210B13A000FDEE9A /* NavigationController.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +216,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F45143D5210AEC1900FDEE9A /* NavigationTheme.swift in Sources */,
-				F45143C3210AE90000FDEE9A /* ViewController.swift in Sources */,
+				F45143C3210AE90000FDEE9A /* LandingViewController.swift in Sources */,
+				F45143E9210B13A000FDEE9A /* NavigationController.swift in Sources */,
 				F45143C1210AE90000FDEE9A /* AppDelegate.swift in Sources */,
+				F45143E7210B0C6400FDEE9A /* UINavigationBar+Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
