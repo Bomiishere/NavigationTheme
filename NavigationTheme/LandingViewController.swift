@@ -8,7 +8,15 @@
 
 import UIKit
 
-class LandingViewController: UIViewController {
-
+class LandingViewController: BaseViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.title = "Landing"
+        
+        navigationDidChangedHandler?(NavigaitonTheme(number: 10))
+    }
+    
 }
 

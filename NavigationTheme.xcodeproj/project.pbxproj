@@ -17,6 +17,7 @@
 		F45143E4210B08C300FDEE9A /* NavigationTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45143D4210AEC1900FDEE9A /* NavigationTheme.swift */; };
 		F45143E7210B0C6400FDEE9A /* UINavigationBar+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45143E6210B0C6400FDEE9A /* UINavigationBar+Theme.swift */; };
 		F45143E9210B13A000FDEE9A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45143E8210B13A000FDEE9A /* NavigationController.swift */; };
+		F45143EB210B1A3B00FDEE9A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45143EA210B1A3B00FDEE9A /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		F45143DE210B067600FDEE9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F45143E6210B0C6400FDEE9A /* UINavigationBar+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Theme.swift"; sourceTree = "<group>"; };
 		F45143E8210B13A000FDEE9A /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		F45143EA210B1A3B00FDEE9A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		F45143BF210AE90000FDEE9A /* NavigationTheme */ = {
 			isa = PBXGroup;
 			children = (
+				F45143EC210B1A5200FDEE9A /* Base */,
 				F45143E5210B0C1400FDEE9A /* Navigation */,
 				F45143C0210AE90000FDEE9A /* AppDelegate.swift */,
 				F45143C2210AE90000FDEE9A /* LandingViewController.swift */,
@@ -112,6 +115,14 @@
 				F45143E8210B13A000FDEE9A /* NavigationController.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		F45143EC210B1A5200FDEE9A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F45143EA210B1A3B00FDEE9A /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +231,7 @@
 				F45143E9210B13A000FDEE9A /* NavigationController.swift in Sources */,
 				F45143C1210AE90000FDEE9A /* AppDelegate.swift in Sources */,
 				F45143E7210B0C6400FDEE9A /* UINavigationBar+Theme.swift in Sources */,
+				F45143EB210B1A3B00FDEE9A /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,6 +17,7 @@ extension UINavigationBar {
         self.tintColor = theme.tintColor
         
         self.titleTextAttributes = theme.titleTextAttributes
+        
     }
     
 }

@@ -10,6 +10,8 @@ import UIKit
 
 enum NavigaitonTheme {
     
+    case Default
+    
     case Light
     
     case Normal
@@ -20,7 +22,7 @@ enum NavigaitonTheme {
         
         switch self {
             
-        case .Light, .Normal: return .default
+        case .Default, .Light, .Normal: return .default
             
         case .Warning: return .lightContent
             
@@ -31,7 +33,7 @@ enum NavigaitonTheme {
         
         switch self {
             
-        case .Light: return nil
+        case .Default, .Light: return nil
             
         case .Normal:
             return UIColor(red: 235/255, green: 156/255, blue: 77/255, alpha: 1.0)
@@ -45,10 +47,10 @@ enum NavigaitonTheme {
         
         switch self {
         
-        case .Light: return nil
+        case .Default, .Light: return nil
             
         case .Normal, .Warning:
-            return [NSAttributedStringKey(kCTForegroundColorAttributeName as String): UIColor.white]
+            return [.foregroundColor : UIColor.white]
         }
     }
     
@@ -56,13 +58,14 @@ enum NavigaitonTheme {
         
         switch self {
             
-        case .Light: return nil
+        case .Default, .Light: return nil
             
         case .Normal, .Warning:
             
             return UIColor.white
         }
     }
+    
 }
 
 extension NavigaitonTheme {
