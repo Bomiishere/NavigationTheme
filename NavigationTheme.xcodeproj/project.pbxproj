@@ -13,7 +13,19 @@
 		F45143C8210AE90100FDEE9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45143C7210AE90100FDEE9A /* Assets.xcassets */; };
 		F45143CB210AE90100FDEE9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45143C9210AE90100FDEE9A /* LaunchScreen.storyboard */; };
 		F45143D5210AEC1900FDEE9A /* NavigationTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45143D4210AEC1900FDEE9A /* NavigationTheme.swift */; };
+		F45143DD210B067600FDEE9A /* NavigationThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45143DC210B067600FDEE9A /* NavigationThemeTests.swift */; };
+		F45143E4210B08C300FDEE9A /* NavigationTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45143D4210AEC1900FDEE9A /* NavigationTheme.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F45143DF210B067600FDEE9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F45143B5210AE90000FDEE9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F45143BC210AE90000FDEE9A;
+			remoteInfo = NavigationTheme;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F45143BD210AE90000FDEE9A /* NavigationTheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationTheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +36,20 @@
 		F45143CA210AE90100FDEE9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F45143CC210AE90100FDEE9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F45143D4210AEC1900FDEE9A /* NavigationTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationTheme.swift; sourceTree = "<group>"; };
+		F45143DA210B067600FDEE9A /* NavigationThemeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationThemeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45143DC210B067600FDEE9A /* NavigationThemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationThemeTests.swift; sourceTree = "<group>"; };
+		F45143DE210B067600FDEE9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F45143BA210AE90000FDEE9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45143D7210B067600FDEE9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				F45143BF210AE90000FDEE9A /* NavigationTheme */,
+				F45143DB210B067600FDEE9A /* NavigationThemeTests */,
 				F45143BE210AE90000FDEE9A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				F45143BD210AE90000FDEE9A /* NavigationTheme.app */,
+				F45143DA210B067600FDEE9A /* NavigationThemeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +89,15 @@
 				F45143CC210AE90100FDEE9A /* Info.plist */,
 			);
 			path = NavigationTheme;
+			sourceTree = "<group>";
+		};
+		F45143DB210B067600FDEE9A /* NavigationThemeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F45143DC210B067600FDEE9A /* NavigationThemeTests.swift */,
+				F45143DE210B067600FDEE9A /* Info.plist */,
+			);
+			path = NavigationThemeTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +120,24 @@
 			productReference = F45143BD210AE90000FDEE9A /* NavigationTheme.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F45143D9210B067600FDEE9A /* NavigationThemeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F45143E1210B067600FDEE9A /* Build configuration list for PBXNativeTarget "NavigationThemeTests" */;
+			buildPhases = (
+				F45143D6210B067600FDEE9A /* Sources */,
+				F45143D7210B067600FDEE9A /* Frameworks */,
+				F45143D8210B067600FDEE9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F45143E0210B067600FDEE9A /* PBXTargetDependency */,
+			);
+			name = NavigationThemeTests;
+			productName = NavigationThemeTests;
+			productReference = F45143DA210B067600FDEE9A /* NavigationThemeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +150,10 @@
 				TargetAttributes = {
 					F45143BC210AE90000FDEE9A = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					F45143D9210B067600FDEE9A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = F45143BC210AE90000FDEE9A;
 					};
 				};
 			};
@@ -116,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				F45143BC210AE90000FDEE9A /* NavigationTheme */,
+				F45143D9210B067600FDEE9A /* NavigationThemeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +184,13 @@
 				F45143CB210AE90100FDEE9A /* LaunchScreen.storyboard in Resources */,
 				F45143C8210AE90100FDEE9A /* Assets.xcassets in Resources */,
 				F45143C6210AE90000FDEE9A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45143D8210B067600FDEE9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +207,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F45143D6210B067600FDEE9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45143DD210B067600FDEE9A /* NavigationThemeTests.swift in Sources */,
+				F45143E4210B08C300FDEE9A /* NavigationTheme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F45143E0210B067600FDEE9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F45143BC210AE90000FDEE9A /* NavigationTheme */;
+			targetProxy = F45143DF210B067600FDEE9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F45143C4210AE90000FDEE9A /* Main.storyboard */ = {
@@ -316,6 +396,46 @@
 			};
 			name = Release;
 		};
+		F45143E2210B067600FDEE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5VBM73Y9G2;
+				INFOPLIST_FILE = NavigationThemeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PrototypeC.NavigationThemeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavigationTheme.app/NavigationTheme";
+			};
+			name = Debug;
+		};
+		F45143E3210B067600FDEE9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5VBM73Y9G2;
+				INFOPLIST_FILE = NavigationThemeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PrototypeC.NavigationThemeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavigationTheme.app/NavigationTheme";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +453,15 @@
 			buildConfigurations = (
 				F45143D0210AE90100FDEE9A /* Debug */,
 				F45143D1210AE90100FDEE9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F45143E1210B067600FDEE9A /* Build configuration list for PBXNativeTarget "NavigationThemeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45143E2210B067600FDEE9A /* Debug */,
+				F45143E3210B067600FDEE9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

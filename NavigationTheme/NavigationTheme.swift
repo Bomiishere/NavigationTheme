@@ -82,6 +82,6 @@ extension NavigaitonTheme {
         default:
             
             self = .Warning
-        }   
+        }
     }
 }
